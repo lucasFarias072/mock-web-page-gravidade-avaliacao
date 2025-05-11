@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravidade - Avaliação</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a1929;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #051321;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #62bcfa;
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: #0d2438;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #62bcfa;
+            margin-top: 0;
+        }
+        .card p {
+            margin-bottom: 10px;
+        }
+        .rating-bar {
+            background-color: #062442;
+            height: 25px;
+            border-radius: 5px;
+            margin-top: 10px;
+            position: relative;
+        }
+        .rating-fill {
+            background-color: #62bcfa;
+            height: 100%;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .rating-number {
+            position: absolute;
+            right: 10px;
+            top: 3px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 .5rem #222;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-color: #051321;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+        }
+        a {
+            color: #62bcfa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #a0d8ff;
+            text-decoration: underline;
+        }
+        .navigation {
+            margin-bottom: 20px;
+        }
+        .final-score {
+            background-color: #0d2438;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .final-score h2 {
+            color: #62bcfa;
+            margin-top: 0;
+        }
+        .score-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #62bcfa;
+            margin: 20px 0;
+        }
+        .score-explanation {
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .critic-quotes {
+            background-color: #0d2438;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .critic-quotes h2 {
+            color: #62bcfa;
+            text-align: center;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 3px solid #62bcfa;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+        .quote-author {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Avaliação do filme "Gravidade" (2013)</h1>
+    </header>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <h3>Direção</h3>
+                <div class="rating-bar">
+                    <div class="rating-fill" style="width: 95%;"></div>
+                    <span class="rating-number">9.5/10</span>
+                </div>
+                <p>Alfonso Cuarón entrega uma direção impecável, equilibrando perfeitamente os aspectos técnicos com a narrativa emocional. A maneira como ele manipula o tempo e o espaço para criar tensão é extraordinária.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Efeitos Visuais</h3>
+                <div class="rating-bar">
+                    <div class="rating-fill" style="width: 98%;"></div>
+                    <span class="rating-number">9.8/10</span>
+                </div>
+                <p>Os efeitos visuais são revolucionários e definiram um novo padrão para filmes de espaço. A simulação da ausência de gravidade e a recriação da órbita terrestre são tecnicamente brilhantes e visualmente deslumbrantes.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Atuação</h3>
+                <div class="rating-bar">
+                    <div class="rating-fill" style="width: 92%;"></div>
+                    <span class="rating-number">9.2/10</span>
+                </div>
+                <p>Sandra Bullock oferece uma das melhores performances de sua carreira, transmitindo o desespero, a resiliência e a transformação emocional de sua personagem com autenticidade impressionante. George Clooney complementa com presença carismática em seu papel coadjuvante.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Roteiro</h3>
+                <div class="rating-bar">
+                    <div class="rating-fill" style="width: 85%;"></div>
+                    <span class="rating-number">8.5/10</span>
+                </div>
+                <p>O roteiro é econômico e eficiente, contando uma história aparentemente simples de sobrevivência que serve como metáfora para superação pessoal. Algumas críticas apontam para diálogos ocasionalmente expositivos, mas a narrativa mantém-se sólida em sua simplicidade intencional.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Cinematografia</h3>
+                <div class="rating-bar">
+                    <div class="rating-fill" style="width: 97%;"></div>
+                    <span class="rating-number">9.7/10</span>
+                </div>
+                <p>Emmanuel Lubezki criou uma cinematografia revolucionária que nos coloca diretamente na experiência claustrofóbica e ao mesmo tempo expansiva do espaço. Os longos planos-sequência e a câmera fluida contribuem para a imersão do espectador na realidade dos astronautas.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Trilha Sonora</h3>
+                <div class="rating-bar">
+                    <div class="rating-fill" style="width: 93%;"></div>
+                    <span class="rating-number">9.3/10</span>
+                </div>
+                <p>A música de Steven Price alterna entre momentos de silêncio absoluto e crescendos emocionantes. A composição complementa perfeitamente as imagens e intensifica as emoções sem jamais se sobrepor à experiência visual.</p>
+            </div>
+        </div>
+        
+        <div class="final-score">
+            <h2>Nota Final</h2>
+            <div class="score-number">9.3/10</div>
+            <p class="score-explanation">Com base na média das avaliações acima (9.5 + 9.8 + 9.2 + 8.5 + 9.7 + 9.3 = 56/6 = 9.3), "Gravidade" se estabelece como uma obra-prima cinematográfica que transcende o gênero de ficção científica, combinando inovação técnica com profundidade emocional.</p>
+        </div>
+        
+        <div class="critic-quotes">
+            <h2>O que a Crítica Diz</h2>
+            <blockquote>
+                "Um triunfo técnico e emocional. Cuarón criou uma experiência tão imersiva que é quase impossível não sentir que você está flutuando no espaço ao lado dos personagens."
+                <div class="quote-author">- Revista Empire</div>
+            </blockquote>
+            <blockquote>
+                "Mais do que um filme de ficção científica, 'Gravidade' é uma poderosa metáfora sobre o renascimento e a superação de traumas pessoais. É uma jornada visceral e profundamente humana."
+                <div class="quote-author">- The New York Times</div>
+            </blockquote>
+            <blockquote>
+                "Os 90 minutos mais intensos e visualmente impressionantes que você já experimentou no cinema. Uma combinação magistral de narrativa simples e tecnologia revolucionária."
+                <div class="quote-author">- Rolling Stone</div>
+            </blockquote>
+        </div>
+
+        <h3>Links Relacionados</h3>
+        <ul>
+            <li><a href="https://lucasfarias072.github.io/mock-web-page-gravidade-curiosidades/"></a>curiosidades</li>
+            <li><a href="https://lucasfarias072.github.io/mock-web-page-gravidade-rank-2013/"></a>rank-2013</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 Projeto de Web Crawling - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
